@@ -26,6 +26,15 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        br-mode="off"
+        saccades-color=""
+        fixation-strength="2"
+        saccades-interval="0"
+        style={{
+          "--fixation-edge-opacity": "80%",
+          "--br-line-height": "1",
+          "--br-boldness": "600",
+        } as React.CSSProperties}
       >
         {children}
       </body>
