@@ -20,6 +20,12 @@ const Navbar = () => {
           <Link href="#projects" className="text-gray-700 dark:text-gray-300 hover:text-blue-500">
             Projeler
           </Link>
+           <Link href="#digital-art" className="text-gray-700 dark:text-gray-300 hover:text-blue-500">
+            Dijital Sanat
+          </Link>
+          <Link href="#ai" className="text-gray-700 dark:text-gray-300 hover:text-blue-500">
+            Yapay Zeka
+          </Link>
           <Link href="#about" className="text-gray-700 dark:text-gray-300 hover:text-blue-500">
             Hakkımda
           </Link>
@@ -42,6 +48,12 @@ const Navbar = () => {
         <div className="md:hidden px-4 pb-4 space-y-2 bg-white dark:bg-gray-900">
           <Link href="#projects" className="block text-gray-700 dark:text-gray-300 hover:text-blue-500">
             Projeler
+          </Link>
+          <Link href="#digital-art" className="block text-gray-700 dark:text-gray-300 hover:text-blue-500">
+            Dijital Sanat
+          </Link>
+          <Link href="#ai" className="block text-gray-700 dark:text-gray-300 hover:text-blue-500">
+            Yapay Zeka
           </Link>
           <Link href="#about" className="block text-gray-700 dark:text-gray-300 hover:text-blue-500">
             Hakkımda
