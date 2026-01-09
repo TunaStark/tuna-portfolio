@@ -6,8 +6,7 @@ const Hero = () => {
         Merhaba, ben Tuna 👋
       </h1>
       <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl">
-        Frontend geliştiricisiyim. Şu anda portföyümü oluşturuyorum ve yapay
-        zeka alanında çalışmalarıma devam ediyorum.
+        Frontend ve AI geliştiricisiyim. React, Next.js ve LLM'ler üzerinde çalışıyorum. AI entegreli PWA'ler oluşturmak en büyük tutkularımdan. 
       </p>
     </section>
   );
