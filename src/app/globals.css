@@ -1,26 +1,33 @@
 @import "tailwindcss";
 
+/* Tailwind v4 varsayılan olarak CSS değişkenlerini (CSS Variables) kullanır.
+  Burada global tema ayarlarını yapıyoruz.
+  
+  theme() fonksiyonu ile Tailwind değerlerine erişebilirsin.
+*/
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --primary: #2563eb; /* Mavi tonu */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --primary: #3b82f6;
   }
 }
 
+/* Modern CSS reset ve temel stiller.
+  React 19 ve Next.js 15 render performansını etkilememesi için
+  font-smoothing ekliyoruz.
+*/
 body {
-  background: var(--background);
   color: var(--foreground);
+  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
