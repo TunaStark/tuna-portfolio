@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "E-Ticaret Dashboard",
+    "description": "Next.js ve Tailwind CSS kullanılarak geliştirilmiş, adminlerin satışları ve stokları takip edebileceği responsive yönetim paneli.",
+    "tags": ["Next.js", "React", "Tailwind CSS", "Recharts"],
+    "githubUrl": "https://github.com/tuna/project-1",
+    "liveUrl": "https://project-1.vercel.app"
+  },
+  {
+    "id": 2,
+    "title": "Hava Durumu Uygulaması",
+    "description": "OpenWeather API kullanılarak anlık hava durumu verilerini çeken, konum bazlı çalışan bir web uygulaması.",
+    "tags": ["JavaScript", "API Integration", "CSS3"],
+    "githubUrl": "https://github.com/tuna/project-2",
+    "liveUrl": null
+  },
+  {
+    "id": 3,
+    "title": "Task Manager (To-Do)",
+    "description": "Kullanıcıların görev ekleyip, düzenleyip silebildiği, verilerin LocalStorage'da tutulduğu pratik bir uygulama.",
+    "tags": ["React", "Redux", "TypeScript"],
+    "githubUrl": "https://github.com/tuna/project-3",
+    "liveUrl": "https://project-3.vercel.app"
+  }
+]
