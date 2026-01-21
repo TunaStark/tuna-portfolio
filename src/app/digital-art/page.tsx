@@ -1,8 +1,8 @@
 import React from "react";
 
 export const metadata = {
-  title: "İletişim | Tuna Portfolio",
-  description: "Benimle iletişime geçin.",
+  title: "Dijital Sanat",
+  description: "Dijital Sanat projeleri",
 };
 
 export default function ContactPage() {
