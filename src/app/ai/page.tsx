@@ -1,15 +1,10 @@
-import React from "react";
+import ComingSoon from '@/components/ComingSoon';
 
-export const metadata = {
-  title: "Yapay Zeka",
-  description: "Yapay Zeka Projeleri",
-};
-
-export default function ContactPage() {
+export default function AIPage() {
   return (
-    // NAVBAR SORUNU İÇİN: pt-24 ekledik.
-    <section className="min-h-screen pt-24 pb-16 px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto">
-      <div className="text-center mb-12">Yapım Aşamasında</div>
-    </section>
+    <ComingSoon 
+      title="Yapay Zeka Laboratuvarı" 
+      description="Yapay zeka modelleri ve deneylerim çok yakında bu sayfada yer alacak." 
+    />
   );
 }
