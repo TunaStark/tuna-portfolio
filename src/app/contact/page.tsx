@@ -1,59 +1,84 @@
-import React from 'react';
+"use client";
 
-export const metadata = {
-  title: "İletişim | Tuna Portfolio",
-  description: "Benimle iletişime geçin.",
-};
+import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 
 export default function ContactPage() {
+  // DİKKAT: Aşağıdaki "FORM_ID_BURAYA_GELECEK" yazısını silip
+  // Formspree panelinden aldığın kodu (Örn: "xnqoqrzl") tırnak içine yaz.
+  const [state, handleSubmit] = useForm("xojevwwb");
+
+  // Form başarıyla gönderilince çıkacak ekran
+  if (state.succeeded) {
+    return (
+      <section className="min-h-screen pt-24 px-4 flex items-center justify-center text-center">
+        <div className="bg-green-50 dark:bg-green-900/20 p-8 rounded-2xl border border-green-200 dark:border-green-800 shadow-sm animate-fade-in">
+            <div className="w-16 h-16 bg-green-100 dark:bg-green-800 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-green-600 dark:text-green-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+            </div>
+            <h2 className="text-3xl font-bold text-green-700 dark:text-green-400 mb-2">Mesajın Alındı!</h2>
+            <p className="text-gray-600 dark:text-gray-300 mb-6">En kısa sürede sana geri dönüş yapacağım.</p>
+            <button 
+                onClick={() => window.location.reload()} 
+                className="text-sm font-medium text-green-600 dark:text-green-400 hover:text-green-800 dark:hover:text-green-200 underline transition-colors"
+            >
+                Yeni bir mesaj gönder
+            </button>
+        </div>
+      </section>
+    );
+  }
+
+  // Form Ekranı
   return (
-    // NAVBAR SORUNU İÇİN: pt-24 ekledik.
     <section className="min-h-screen pt-24 pb-16 px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto">
       
       <div className="text-center mb-12">
         <h1 className="text-4xl font-extrabold text-gray-900 dark:text-white mb-4">
           İletişime Geçin
         </h1>
-        <p className="text-lg text-gray-600 dark:text-gray-300">
-          Bir proje fikriniz mi var veya sadece tanışmak mı istiyorsunuz? 
-          Aşağıdaki formu doldurabilir veya sosyal medyadan ulaşabilirsiniz.
+        <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+           Bir proje fikriniz mi var veya sadece tanışmak mı istiyorsunuz? 
+           Aşağıdaki formu doldurarak bana doğrudan e-posta gönderebilirsiniz.
         </p>
       </div>
 
-      <div className="bg-white dark:bg-gray-900 p-8 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-lg">
-        <form className="space-y-6">
+      <div className="bg-white dark:bg-gray-900 p-6 sm:p-8 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-lg">
+        <form onSubmit={handleSubmit} className="space-y-6">
           
-          {/* İsim Soyisim */}
+          {/* İsim Alanı */}
           <div>
             <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
               Adınız Soyadınız
             </label>
             <input
-              type="text"
               id="name"
+              type="text" 
               name="name"
               placeholder="Örn: Ahmet Yılmaz"
               className="w-full px-4 py-3 rounded-lg bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
               required
             />
+            <ValidationError prefix="Name" field="name" errors={state.errors} className="text-red-500 text-sm mt-1" />
           </div>
 
-          {/* Email */}
+          {/* Email Alanı */}
           <div>
             <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
               E-posta Adresiniz
             </label>
             <input
-              type="email"
               id="email"
+              type="email" 
               name="email"
               placeholder="ornek@email.com"
               className="w-full px-4 py-3 rounded-lg bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
               required
             />
+            <ValidationError prefix="Email" field="email" errors={state.errors} className="text-red-500 text-sm mt-1" />
           </div>
 
-          {/* Mesaj */}
+          {/* Mesaj Alanı */}
           <div>
             <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
               Mesajınız
@@ -63,29 +88,21 @@ export default function ContactPage() {
               name="message"
               rows={5}
               placeholder="Size nasıl yardımcı olabilirim?"
-              className="w-full px-4 py-3 rounded-lg bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all resize-none"
+              className="w-full px-4 py-3 rounded-lg bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none resize-none transition-all"
               required
-            ></textarea>
+            />
+            <ValidationError prefix="Message" field="message" errors={state.errors} className="text-red-500 text-sm mt-1" />
           </div>
 
-          {/* Submit Butonu */}
+          {/* Gönder Butonu */}
           <button
             type="submit"
-            className="w-full py-4 px-6 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-bold text-lg transition-transform hover:scale-[1.02] active:scale-95 shadow-lg shadow-blue-600/30"
+            disabled={state.submitting}
+            className="w-full py-4 px-6 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-bold text-lg transition-all hover:scale-[1.02] active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg shadow-blue-500/30"
           >
-            Gönder
+            {state.submitting ? "Gönderiliyor..." : "Gönder"}
           </button>
         </form>
-
-        {/* Alternatif İletişim (Mailto) */}
-        <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-800 text-center">
-            <p className="text-gray-500 dark:text-gray-400">
-                Veya doğrudan e-posta gönderin: <br />
-                <a href="mailto:tuna@example.com" className="text-blue-600 hover:underline font-medium">
-                    guralptuna@gmail.com
-                </a>
-            </p>
-        </div>
       </div>
     </section>
   );
