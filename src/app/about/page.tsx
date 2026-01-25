@@ -26,7 +26,7 @@ export default function AboutPage() {
           </h1>
           <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
             Merhaba! Ben Tuna. Teknolojiye olan tutkum, karmaşık problemleri basit ve etkili yazılım çözümlerine dönüştürme isteğimle başladı. 
-            Sürekli öğrenen, modern web teknolojilerini yakından takip eden ve "temiz kod" prensibini benimseyen bir geliştiriciyim.
+            Sürekli öğrenen, modern web teknolojilerini yakından takip eden ve &quot;temiz kod&quot; prensibini benimseyen bir geliştiriciyim.
           </p>
           <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
             Şu anda iş arayışındayım ve yeni projelerde yer alarak ekibe değer katmak istiyorum. Hem Frontend hem de Backend tarafında kendimi geliştirmeye devam ediyorum.
