@@ -1,29 +1,19 @@
 @import "tailwindcss";
 
-/* Tailwind v4 varsayılan olarak CSS değişkenlerini (CSS Variables) kullanır.
-  Burada global tema ayarlarını yapıyoruz.
-  
-  theme() fonksiyonu ile Tailwind değerlerine erişebilirsin.
-*/
-
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --primary: #2563eb; /* Mavi tonu */
+  /* ARTIK SADECE DARK MODE RENKLERİ VAR */
+  /* Light mode (#ffffff) tanımlarını sildik */
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --primary: #3b82f6;
+  
+  /* Tarayıcıya bu sitenin karanlık olduğunu bildirir (Scrollbar vb. koyu olur) */
+  color-scheme: dark;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-    --primary: #3b82f6;
-  }
-}
+/* @media (prefers-color-scheme: dark) BLOĞUNU TAMAMEN SİLİYORUZ. */
+/* Çünkü artık varsayılanımız zaten karanlık. */
 
-/* Modern CSS reset ve temel stiller.
-  React 19 ve Next.js 15 render performansını etkilememesi için
-  font-smoothing ekliyoruz.
-*/
 body {
   color: var(--foreground);
   background: var(--background);
@@ -32,8 +22,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* ... diğer kodlar ... */
-
+/* ... diğer animasyon kodların (scroll vb.) aynen kalsın ... */
 @keyframes scroll {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }

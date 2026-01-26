@@ -38,7 +38,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="tr" className="scroll-smooth">
+    <html lang="tr" className="scroll-smooth dark">
       {/* Hydration hatalarını önlemek ve font değişkenini body'e eklemek için 
         template literal kullanıyoruz.
       */}
