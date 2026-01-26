@@ -6,9 +6,9 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Vercel](https://img.shields.io/badge/Deploy-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
 
-> **Live Demo:** [tuna-portfolio.vercel.app](https://tuna-portfolio.vercel.app)
+> **Live Demo:** [tuna-portfolio.vercel.app](https://tunaxg.vercel.app)
 
-![Project Hero](https://github.com/TunaStark/tuna-portfolio/blob/main/public/hero-screenshot.png?raw=true)
+![Project Hero](./public/hero-screenshot.png?raw=true)
 
 ## 🚀 About The Project
 
@@ -41,7 +41,7 @@ I selected the most modern and stable technologies available in the ecosystem:
 
 | Projects Page | Contact Section |
 |:---:|:---:|
-| ![Projects](https://github.com/TunaStark/tuna-portfolio/blob/main/public/projects-screenshot.png?raw=true) | ![Contact](https://github.com/TunaStark/tuna-portfolio/blob/main/public/contact-screenshot.png?raw=true) |
+| ![Projects](./public/projects-screenshot.png?raw=true) | ![Contact](./public/contact-screenshot.png?raw=true) |
 
 ## 📦 Getting Started
 
