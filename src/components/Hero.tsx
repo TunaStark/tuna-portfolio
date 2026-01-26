@@ -18,7 +18,7 @@ export default function Home() {
       
       {/* 1. BÖLÜM: HERO (Giriş) */}
       <section className="relative flex flex-col items-center justify-center min-h-[90vh] px-4 text-center overflow-hidden pt-20">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-blue-500/20 rounded-full blur-[120px] -z-10" />
+        <div className="absolute mt-8 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-blue-500/20 rounded-full blur-[120px] -z-10" />
         
         <div className="space-y-6 max-w-3xl animate-fade-in-up">
           <h1 className="text-4xl sm:text-7xl font-extrabold tracking-tight text-gray-900 dark:text-white">
