@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import MouseGradient from "@/components/MouseGradient";
+import SmoothScroll from "@/components/SmoothScroll";
+import Footer from "@/components/Footer";
 
 // Google Font optimizasyonu
 const inter = Inter({
@@ -44,8 +47,11 @@ export default function RootLayout({
       >
         {/* İleride buraya Header/Navbar gelecek */}
         <Navbar />
+        <MouseGradient />
+        <SmoothScroll />
         <main className="flex-grow">{children}</main>
         {/* İleride buraya Footer gelecek */}
+        <Footer />
       </body>
     </html>
   );
