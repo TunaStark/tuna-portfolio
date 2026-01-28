@@ -12,7 +12,7 @@ interface ProjectProps {
 
 const ProjectCard: React.FC<ProjectProps> = ({ title, description, tags, githubUrl, liveUrl }) => {
   return (
-    <div className="group border border-gray-800 bg-gray-900/50 rounded-xl p-6 hover:border-blue-500/50 transition-all hover:shadow-lg hover:shadow-blue-900/20 flex flex-col h-full">
+    <div className="group border border-gray-800 bg-gray-900/50 backdrop-blur-sm rounded-xl p-6 hover:border-blue-500/50 transition-all hover:shadow-lg hover:shadow-blue-900/20 flex flex-col h-full">
       
       {/* Başlık */}
       <h3 className="text-xl font-bold text-gray-100 mb-2 group-hover:text-blue-400 transition-colors">
