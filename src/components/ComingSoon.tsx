@@ -8,7 +8,7 @@ interface ComingSoonProps {
 
 const ComingSoon: React.FC<ComingSoonProps> = ({ title, description }) => {
   return (
-    <div className="min-h-[60vh] flex flex-col items-center justify-center text-center px-4 pt-24">
+    <div className="min-h-[60vh] flex flex-col items-center justify-center text-center px-4 pt-24 pb-24">
       
       <div className="w-24 h-24 bg-blue-900/30 rounded-full flex items-center justify-center mb-6 border border-blue-800/50">
         <svg className="w-12 h-12 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
