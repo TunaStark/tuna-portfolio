@@ -64,8 +64,8 @@ export default function Home() {
                     </span>
                 ))}
             </div>
-            <div className="absolute top-0 left-0 h-full w-20 bg-gradient-to-r from-[#0a0a0a] to-transparent z-10" />
-            <div className="absolute top-0 right-0 h-full w-20 bg-gradient-to-l from-[#0a0a0a] to-transparent z-10" />
+            <div className="absolute top-0 left-0 h-full w-20 bg-gradient-to-r  to-transparent z-10" />
+            <div className="absolute top-0 right-0 h-full w-20 bg-gradient-to-l  to-transparent z-10" />
         </div>
       </section>
 
