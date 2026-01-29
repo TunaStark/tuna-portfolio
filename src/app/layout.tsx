@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   description:
     "Modern web teknolojileri ile geliştirilmiş kişisel portfolyo sitesi.",
   keywords: ["Next.js", "React", "Developer", "Portfolio", "Tuna"],
-  authors: [{ name: "Tuna", url: "https://github.com/senin-kullanici-adin" }],
+  authors: [{ name: "Tuna", url: "https://github.com/tunastark" }],
   openGraph: {
     type: "website",
     locale: "tr_TR",
