@@ -1,26 +1,10 @@
 [
   {
     "id": 1,
-    "title": "E-Ticaret Dashboard",
-    "description": "Next.js ve Tailwind CSS kullanılarak geliştirilmiş, adminlerin satışları ve stokları takip edebileceği responsive yönetim paneli.",
-    "tags": ["Next.js", "React", "Tailwind CSS", "Recharts"],
-    "githubUrl": "https://github.com/tunastark",
-    "liveUrl": "https://tunaxg.vercel.app"
-  },
-  {
-    "id": 2,
-    "title": "Hava Durumu Uygulaması",
-    "description": "OpenWeather API kullanılarak anlık hava durumu verilerini çeken, konum bazlı çalışan bir web uygulaması.",
-    "tags": ["JavaScript", "API Integration", "CSS3"],
-    "githubUrl": "https://github.com/tunastark",
-    "liveUrl": null
-  },
-  {
-    "id": 3,
-    "title": "Task Manager (To-Do)",
-    "description": "Kullanıcıların görev ekleyip, düzenleyip silebildiği, verilerin LocalStorage'da tutulduğu pratik bir uygulama.",
-    "tags": ["React", "Redux", "TypeScript"],
-    "githubUrl": "https://github.com/tunastark",
-    "liveUrl": "https://tunaxg.vercel.app"
+    "title": "AI SaaS Gen",
+    "description": "Önyüzü Next.js ve Tailwind CSS kullanılarak, backend tarafında Fastapi(Python) ve Supabase kullanılarak geliştirilmiş, gemini entegreli chatbot.",
+    "tags": ["Next.js", "React", "Tailwind CSS", "Recharts", "Supabase", "SaaS", "Python", "Artificial Intelligence"],
+    "githubUrl": "https://github.com/TunaStark/ai-saas-gen",
+    "liveUrl": "https://ai-saas-gen-tuna.vercel.app/"
   }
 ]
