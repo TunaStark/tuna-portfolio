@@ -49,7 +49,7 @@ export default function RootLayout({
         <Navbar />
         <MouseGradient />
         <SmoothScroll />
-        <main className="flex-grow">{children}</main>
+        <main className="flex-grow mt-10">{children}</main>
         {/* İleride buraya Footer gelecek */}
         <Footer />
       </body>
