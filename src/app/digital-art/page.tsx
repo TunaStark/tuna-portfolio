@@ -81,7 +81,7 @@ export default function DigitalArtPage() {
             <div 
               key={art.id} 
               onClick={() => setSelectedArt(art)} // 🌟 YENİ: Tıklayınca eseri seç
-              className="group relative aspect-square md:aspect-[4/5] rounded-2xl overflow-hidden bg-gray-900 cursor-zoom-in"
+              className="group relative aspect-square md:aspect-[4/5] rounded-2xl overflow-hidden bg-gray-900 cursor-crosshair"
             >
               {/* Resim */}
               <img 
