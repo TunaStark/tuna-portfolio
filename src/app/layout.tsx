@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import MouseGradient from "@/components/MouseGradient";
 import SmoothScroll from "@/components/SmoothScroll";
 import Footer from "@/components/Footer";
+import CustomCursor from "@/components/CustomCursor";
 
 // Google Font optimizasyonu
 const inter = Inter({
@@ -43,9 +44,10 @@ export default function RootLayout({
         template literal kullanıyoruz.
       */}
       <body
-        className={`${inter.variable} antialiased min-h-screen flex flex-col`}
+        className={`${inter.variable} antialiased min-h-screen flex flex-col cursor-none`}
       >
         {/* İleride buraya Header/Navbar gelecek */}
+        <CustomCursor />
         <Navbar />
         <MouseGradient />
         <SmoothScroll />
