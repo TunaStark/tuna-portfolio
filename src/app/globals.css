@@ -31,3 +31,11 @@ body {
 .animate-scroll {
   animation: scroll 25s linear infinite;
 }
+
+/* Sadece masaüstü ekranlarda (768px ve üzeri) kendi faremizi kullanacağımız için,
+   tarayıcının varsayılan fare oklarını ve el işaretlerini tamamen yasaklıyoruz. */
+@media (min-width: 768px) {
+  *, *::before, *::after {
+    cursor: none !important;
+  }
+}
