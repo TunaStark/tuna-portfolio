@@ -1,0 +1,20 @@
+{
+  "hero": {
+    "title": "Modern Web",
+    "subtitle": "Deneyimleri",
+    "description": "Merhaba, ben Tuna. Fikirleri koda, kodu ürüne dönüştürüyorum. Performans, estetik ve kullanılabilirliği odağıma alarak Next.js ekosisteminde çözümler üretiyorum.",
+    "projectsBtn": "Projelerimi İncele",
+    "contactBtn": "İletişime Geç",
+    "techStack": "Kullandığım Teknolojiler",
+    "featuredProjects": "Seçilmiş Çalışmalar",
+    "featuredDesc": "Son zamanlarda üzerinde çalıştığım, problem çözme yeteneğimi ve teknik bilgimi yansıtan bazı projeler.",
+    "viewAll": "Tümünü Gör"
+  },
+  "nav": {
+    "projects": "Projeler",
+    "digitalArt": "Dijital Sanat",
+    "ai": "Yapay Zeka",
+    "about": "Hakkımda",
+    "contact": "İletişim"
+  }
+}
