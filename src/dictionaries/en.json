@@ -1,20 +1,28 @@
 {
-  "hero": {
-    "title": "Modern Web",
-    "subtitle": "Experiences",
-    "description": "Hi, I'm Tuna. I turn ideas into code and code into products. I build solutions in the Next.js ecosystem with a focus on performance, aesthetics, and usability.",
-    "projectsBtn": "View Projects",
-    "contactBtn": "Contact Me",
-    "techStack": "Technologıes I Use",
-    "featuredProjects": "Selected Works",
-    "featuredDesc": "Some of the recent projects I've worked on, reflecting my problem-solving skills and technical knowledge.",
-    "viewAll": "View All"
-  },
   "nav": {
     "projects": "Projects",
     "digitalArt": "Digital Art",
     "ai": "AI Studio",
     "about": "About",
     "contact": "Contact"
+  },
+  "hero": {
+    "title": "Hi, I'm Tuna.",
+    "subtitle": "Senior Software Developer",
+    "description": "I build modern, fast, and scalable web applications with cutting-edge technologies.",
+    "projectsBtn": "View Projects",
+    "contactBtn": "Contact Me",
+    "techStack": "Tech Stack",
+    "featuredProjects": "Featured Projects",
+    "featuredDesc": "Some of my recent work.",
+    "viewAll": "View All Projects"
+  },
+  "projects": {
+    "pageTitle": "What I've Built",
+    "pageDesc": "A selection of technologies and solutions I've developed.",
+    "githubBtn": "View on GitHub",
+    "liveBtn": "Live Demo",
+    "metaTitle": "My Projects",
+    "metaDesc": "Web applications and open source projects I've developed."
   }
 }
