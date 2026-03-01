@@ -1,10 +1,38 @@
-[
-  {
-    "id": 1,
-    "title": "AI SaaS Gen",
-    "description": "Önyüzü Next.js ve Tailwind CSS kullanılarak, backend tarafında Fastapi(Python) ve Supabase kullanılarak geliştirilmiş, gemini entegreli chatbot.",
-    "tags": ["Next.js", "React", "Tailwind CSS", "Recharts", "Supabase", "SaaS", "Python", "Artificial Intelligence"],
-    "githubUrl": "https://github.com/TunaStark/ai-saas-gen",
-    "liveUrl": "https://ai-saas-gen-tuna.vercel.app/"
-  }
-]
+{
+  "tr": [
+    {
+      "id": 1,
+      "title": "AI SaaS Gen",
+      "description": "Önyüzü Next.js ve Tailwind CSS, backend tarafı ise FastAPI (Python) ve Supabase kullanılarak geliştirilmiş, Gemini entegreli akıllı chatbot ve SaaS platformu.",
+      "tags": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Supabase",
+        "SaaS",
+        "Python",
+        "Artificial Intelligence"
+      ],
+      "githubUrl": "https://github.com/TunaStark/ai-saas-gen",
+      "liveUrl": "https://ai-saas-gen-tuna.vercel.app/"
+    }
+  ],
+  "en": [
+    {
+      "id": 1,
+      "title": "AI SaaS Gen",
+      "description": "A Gemini-integrated smart chatbot and SaaS platform. The frontend is built with Next.js and Tailwind CSS, while the backend is powered by FastAPI (Python) and Supabase.",
+      "tags": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Supabase",
+        "SaaS",
+        "Python",
+        "Artificial Intelligence"
+      ],
+      "githubUrl": "https://github.com/TunaStark/ai-saas-gen",
+      "liveUrl": "https://ai-saas-gen-tuna.vercel.app/"
+    }
+  ]
+}
