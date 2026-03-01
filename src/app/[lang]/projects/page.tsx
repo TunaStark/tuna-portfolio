@@ -1,29 +1,48 @@
 import React from 'react';
-import ProjectCard from '@/components/ProjectCard'; // Oluşturduğumuz bileşeni çağırdık
-import projectsData from '@/data/projects.json'; // JSON verisini çektik
+import ProjectCard from '@/components/ProjectCard';
+import projectsData from '@/data/projects.json';
+import { getDictionary } from '@/utils/getDictionary';
 
-// Metadata: Sayfa başlığı tarayıcı sekmesinde "Projeler | ..." görünecek
-export const metadata = {
-  title: 'Projelerim',
-  description: 'Geliştirdiğim web uygulamaları ve açık kaynak projeler.',
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: 'en' | 'tr' }>;
+}) {
+  const { lang } = await params;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const dict = (await getDictionary(lang)) as any;
+  
+  return {
+    title: dict.projects.metaTitle,
+    description: dict.projects.metaDesc,
+  };
+}
 
-export default function ProjectsPage() {
+export default async function ProjectsPage({
+  params,
+}: {
+  params: Promise<{ lang: 'en' | 'tr' }>;
+}) {
+  const { lang } = await params;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const dict = (await getDictionary(lang)) as any;
+  const currentLang = lang as keyof typeof projectsData;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const currentProjects = projectsData[currentLang] as any[];
   return (
     <section className="container mx-auto px-4 pt-24 pb-16 min-h-screen">
       
-      <div className="max-w-4xl mx-auto mb-12 text-center">
+      <div className="max-w-4xl mx-auto mb-12 text-center animate-in fade-in slide-in-from-bottom-4 duration-700">
         <h1 className="text-3xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-          Neler Ürettim?
+          {dict.projects.pageTitle}
         </h1>
         <p className="text-gray-400 text-lg">
-          Kullandığım teknolojiler ve geliştirdiğim çözümlerden seçkiler.
+          {dict.projects.pageDesc}
         </p>
       </div>
 
-      {/* Grid Yapısı: Mobilde 1, Tablette 2, Masaüstünde 3 sütun */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {projectsData.map((project) => (
+        {currentProjects.map((project) => (
           <ProjectCard
             key={project.id}
             title={project.title}
@@ -31,6 +50,8 @@ export default function ProjectsPage() {
             tags={project.tags}
             githubUrl={project.githubUrl}
             liveUrl={project.liveUrl}
+            githubText={dict.projects.githubBtn}
+            liveText={dict.projects.liveBtn}
           />
         ))}
       </div>
